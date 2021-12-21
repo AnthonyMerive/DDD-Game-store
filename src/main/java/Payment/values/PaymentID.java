@@ -1,4 +1,6 @@
 package Payment.values;
 
-public class PaymentID {
+import co.com.sofka.domain.generic.Identity;
+
+public class PaymentID extends Identity {
 }

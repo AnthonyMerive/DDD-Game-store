@@ -1,4 +1,6 @@
 package ProductInventory.values;
 
-public class InventoryID {
+import co.com.sofka.domain.generic.Identity;
+
+public class InventoryID extends Identity {
 }

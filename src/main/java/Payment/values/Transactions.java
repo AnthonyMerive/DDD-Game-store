@@ -1,4 +1,12 @@
 package Payment.values;
 
-public class Transactions {
+import co.com.sofka.domain.generic.ValueObject;
+
+import java.util.List;
+
+public class Transactions implements ValueObject<List> {
+
+    public List value() {
+        return null;
+    }
 }

@@ -1,4 +1,10 @@
 package Store.values;
 
-public class Type {
+import co.com.sofka.domain.generic.ValueObject;
+
+public class Type implements ValueObject<String> {
+
+    public String value() {
+        return null;
+    }
 }
