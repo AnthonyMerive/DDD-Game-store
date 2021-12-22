@@ -1,6 +1,5 @@
 package UserControl;
 
-import Store.events.ConsoleAdded;
 import UserControl.events.BuyerAdded;
 import UserControl.events.SellerAdded;
 import UserControl.values.*;
@@ -16,6 +15,7 @@ public class UserControl extends AggregateEvent<UserControlID> {
 
     public UserControl(UserControlID entityId) {
         super(entityId);
+        subscribe(new UserControlChange(this));
     }
 
     public void addBuyer(BuyerID buyerID, Name name){

@@ -18,6 +18,7 @@ public class Store extends AggregateEvent<StoreID> {
 
     public Store(StoreID entityId) {
         super(entityId);
+        subscribe(new StoreChange(this));
     }
 
     public void addConsole(ConsoleID consoleID, Name name, Price price, Type type){

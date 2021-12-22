@@ -18,7 +18,9 @@ public class Payment extends AggregateEvent<PaymentID> {
     protected Set<Accountability> accountabilities;
 
     public Payment(PaymentID entityId) {
+
         super(entityId);
+        subscribe(new PaymentChange(this));
     }
 
     public void addPaymentMethod(PaymentID paymentID, Methods methods, Price price){
