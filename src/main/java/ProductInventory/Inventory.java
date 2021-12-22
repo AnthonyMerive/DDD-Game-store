@@ -11,4 +11,5 @@ public class Inventory extends AggregateEvent<InventoryID> {
     public Inventory(InventoryID entityId) {
         super(entityId);
     }
+
 }

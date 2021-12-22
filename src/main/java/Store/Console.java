@@ -44,4 +44,5 @@ public class Console extends Entity<ConsoleID> {
     public Type type() {
         return type;
     }
+
 }
